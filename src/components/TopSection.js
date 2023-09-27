@@ -19,7 +19,7 @@ const TopSection = () => {
       </div>
       
       <div className="header-image">
-        <img src={HeaderImage} alt="Header Image" />
+        <img src={HeaderImage} alt="Header" />
       </div>
     </div>
   )

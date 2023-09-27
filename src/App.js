@@ -1,12 +1,19 @@
 import './App.css';
 import LandingPage from './pages/LandingPage';
+import TicketingPage from './pages/TicketingPage';
 
-import './fonts/Asher Punk/Asher Punk.ttf'
+import { Routes, Route } from "react-router-dom";
+
+import './fonts/Asher Punk/Asher Punk.ttf';
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      <Routes>
+        <Route path="/ticketing" element={ <TicketingPage /> }></Route>
+        <Route exact path="/" element={ <LandingPage/> }/>
+        
+      </Routes>
     </div>
   );
 }
