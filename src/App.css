@@ -8,11 +8,77 @@ body {
     url("./fonts/Asher Punk/Asher Punk.ttf") format("truetype");
 }
 
-/* Top Section */
+.App {
+  display: flex;
+  align-items: center;
+}
+
+/* Top Section --------------- */
 
 /* Navbar */
 
+.navbar {
+  display: flex;
+  width: 92.5%;
+  justify-content: space-between;
+}
+.navbar>div.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+.navbar>div.menu-btn>.hamburger-menu {
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+
+  margin: 16px auto;
+}
+.navbar>div.menu-btn>.hamburger-menu::before,
+.navbar>div.menu-btn>.hamburger-menu::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+.navbar>div.menu-btn>.hamburger-menu::before {
+  transform: translateY(-16px);
+}
+.navbar>div.menu-btn>.hamburger-menu::after {
+  transform: translateY(16px);
+}
+
+.navbar>button.buy-tickets {
+  display: flex;
+  padding: 8px 22px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 60px;
+  background: linear-gradient(90deg, #FF34B3 0%, #F2A900 100%);
+  color: #FFF;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
 /* ------ */
+
+/* Top Section Content  */
 
 .top-section {
   padding-top: 48px;
@@ -21,7 +87,7 @@ body {
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 48px;
+  gap: 80px;
 }
 
 .title-section>h1 {
@@ -39,7 +105,9 @@ body {
 }
 
 .title-section>.title-info>h2 {
-  color: #FF34B3;
+  background: linear-gradient(90deg, #FF34B3 0%, #F2A900 100%);
+  background-clip: text;
+  color: transparent;
   font-family: Montserrat;
   font-size: 36px;
   font-style: normal;
@@ -50,5 +118,12 @@ body {
 
 .header-image {
   overflow: hidden;
-  width: 100%
+  padding-top: 36px;
+  width: 100vw;
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
+
+/* ------ */
