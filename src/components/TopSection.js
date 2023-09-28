@@ -15,7 +15,7 @@ const TopSection = () => {
       </div>
 
       <div className="title-section">
-        <h1>Beyond Lightning Vietnam</h1>
+        <h1>beyond lightning vietnam</h1>
         <div className="title-info">
           <h2>Da Nang, Vietnam</h2>
           <h2>March 29-30, 2024</h2>

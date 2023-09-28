@@ -94,18 +94,23 @@ body {
 .title-section>h1 {
   font-family: "Asher Punk";
   font-size: 118px;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.20);
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
   color: #fff;
   font-weight: 400;
+  position: relative;
+  border-bottom: #FF34B3 solid;
+  line-height: 70%;
 }
 
 .title-section>.title-info {
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .title-section>.title-info>h2 {
+  margin-top: 28px;
   background: linear-gradient(90deg, #FF34B3 0%, #F2A900 100%);
   background-clip: text;
   color: transparent;
