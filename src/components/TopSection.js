@@ -1,5 +1,7 @@
 import HeaderImage from './Header Image.svg';
 
+import { Link } from 'react-router-dom';
+
 const TopSection = () => {
   return (
     <div className="top-section">
@@ -7,7 +9,9 @@ const TopSection = () => {
         <div className="menu-btn">
           <div className='hamburger-menu' />
         </div>
-        <button className='buy-tickets'>Buy Tickets</button>
+        <Link to={"ticketing"}>
+          <button className='buy-tickets'>Buy Tickets</button>
+        </Link>
       </div>
 
       <div className="title-section">
@@ -17,7 +21,7 @@ const TopSection = () => {
           <h2>March 29-30, 2024</h2>
         </div>
       </div>
-      
+
       <div className="header-image">
         <img src={HeaderImage} alt="Header" />
       </div>
