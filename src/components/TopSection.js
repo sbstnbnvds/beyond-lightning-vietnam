@@ -1,4 +1,4 @@
-import HeaderImage from './Header Image.svg';
+import HeaderImage from '../assets/Header Image.svg';
 
 import { Link } from 'react-router-dom';
 

@@ -1,6 +1,7 @@
 import './App.css';
 import LandingPage from './pages/LandingPage';
 import TicketingPage from './pages/TicketingPage';
+import About from './components/About';
 
 import { Routes, Route } from "react-router-dom";
 
@@ -11,8 +12,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/ticketing" element={ <TicketingPage /> }></Route>
-        <Route exact path="/" element={ <LandingPage/> }/>
+        <Route path='/test' element={ <About/>} />
         
+        <Route exact path="/" element={ <LandingPage/> }/>
       </Routes>
     </div>
   );

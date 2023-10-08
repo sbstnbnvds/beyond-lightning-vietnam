@@ -9,13 +9,32 @@ body {
 }
 
 .App {
-  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
+  display: flex;
+  background-color: #201148;
+}
+
+h2, h3 {
+  background: linear-gradient(90deg, #FF34B3 0%, #F2A900 100%);
+  background-clip: text;
+  color: transparent;
 }
 
 /* LANDING PAGE */
 
 /* Top Section --------------- */
+
+.top-section {
+  padding-top: 48px;
+  background: linear-gradient(180deg, #2011A2 0%, rgba(0, 0, 0, 0.00) 77%), #201148;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 80px;
+}
 
 /* Navbar */
 
@@ -61,7 +80,6 @@ body {
 .navbar>div.menu-btn>.hamburger-menu::after {
   transform: translateY(16px);
 }
-
 .navbar>a>button.buy-tickets {
   display: flex;
   padding: 8px 22px;
@@ -81,16 +99,6 @@ body {
 
 /* Top Section Content  */
 
-.top-section {
-  padding-top: 48px;
-  background: linear-gradient(180deg, #2011A2 0%, rgba(0, 0, 0, 0.00) 77%), #201148;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 80px;
-}
-
 .title-section>h1 {
   font-family: "Asher Punk";
   font-size: 118px;
@@ -101,14 +109,12 @@ body {
   border-bottom: #FF34B3 solid;
   line-height: 70%;
 }
-
 .title-section>.title-info {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 .title-section>.title-info>h2 {
   margin-top: 28px;
   background: linear-gradient(90deg, #FF34B3 0%, #F2A900 100%);
@@ -121,7 +127,6 @@ body {
   line-height: normal;
   text-transform: uppercase;
 }
-
 .header-image {
   overflow: hidden;
   padding-top: 36px;
@@ -132,4 +137,45 @@ body {
   align-items: flex-start;
 }
 
+/* ------ */
+
+/* About Section  */
+
+.about-section {
+  margin-top: 112px;
+  display: flex;
+  flex-direction: column;
+  width: min(92.5%);
+  background-color: #FF34B3;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------ */
+
+/* About Section Content  */
+
+.about-main{
+  display: flex;
+  flex-direction: row;
+}
+
+.about-2nd {
+  display: flex;
+}
+.video {
+  height: 628px;
+  width: 836px;
+  display: flex;
+  background-color: #FFF;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.video>img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
 /* ------ */
