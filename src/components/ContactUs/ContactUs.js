@@ -2,7 +2,9 @@ import React from 'react'
 
 const ContactUs = () => {
   return (
-    <div>ContactUs</div>
+    <section className="contact-us-section bg-primary-2">
+      Contact Us Section.
+    </section>
   )
 }
 

@@ -1,4 +1,6 @@
 import './Appv2.css';
+
+// import Navbar from './components/Navbar/Navbar';
 import LandingPage from './pages/LandingPage';
 import TicketingPage from './pages/TicketingPage';
 
@@ -9,6 +11,7 @@ import './fonts/Asher Punk/Asher Punk.ttf';
 function App() {
   return (
     <div className="App">
+      {/* <Navbar/> */}
       <Routes>
         <Route path="/ticketing" element={ <TicketingPage /> }></Route>
         

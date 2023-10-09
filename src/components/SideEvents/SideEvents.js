@@ -1,6 +1,6 @@
 const SideEvents = () => {
   return (
-    <section className="side-events-section">
+    <section className="side-events-section bg-primary-1">
       <div className="section-wrapper">
         <h2>Events</h2>
         <ul>

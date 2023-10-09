@@ -1,6 +1,6 @@
 const GetInvolved = () => {
   return (
-    <section class="get-involved-section">
+    <section class="get-involved-section bg-primary-1">
       <div class="section-wrapper">
         <h2>Involved</h2>
         <div class="get-involved-section__grid">

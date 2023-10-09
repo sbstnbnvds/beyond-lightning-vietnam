@@ -1,61 +1,83 @@
 /* // https://piccalil.li/blog/a-modern-css-reset */
 
-/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font: inherit
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
 a {
   text-decoration: none;
 }
-/* Set core root defaults */
-/* html:focus-within {
-  scroll-behavior: smooth;
-} */
 
-/* Set core body defaults */
-/* body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-} */
-
-/* Make images easier to work with */
-/* img,
-picture {
-  max-width: 100%;
-  display: block;
-} */
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
+@font-face {
+  font-family: "Asher Punk";
+  src: local("AsherPunk"),
+    url("./fonts/Asher Punk/Asher Punk.ttf") format("truetype");
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-/* @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
+:root {
+  /* color palette */
+  --sky-blue-color: #55e7ff;
+  --vivid-sky-blue-color: #00ccfd;
+  --persian-rose-color: #ff34b3;
+  --neon-blue-color: #2011a2;
+  --russian-violet-color: #201148;
+  --american-yellow-color: #f2a900;
+
+  /* color gradients  */
+  --russian-violet-to-neon-blue: linear-gradient(var(--russian-violet-color), var(--neon-blue-color));
+  --neon-blue-to-russian-violet: linear-gradient(var(--neon-blue-color), var(--russian-violet-color));
   
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  } */
+  --persian-rose-to-american-yellow: linear-gradient(var(--persian-rose-color), var(--american-yellow-color));
+  --american-yellow-to-persian-rose: linear-gradient(var(--american-yellow-color), var(--persian-rose-color));
+
+  --horizontal-persian-rose-to-american-yellow: linear-gradient(90deg, var(--persian-rose-color), var(--american-yellow-color));
+  --horizontal-american-yellow-to-persian-rose: linear-gradient(90deg, var(--american-yellow-color), var(--persian-rose-color));
+
+  /* font weights  */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+}
+
+.bg-primary-1 {
+  background: var(--neon-blue-to-russian-violet);
+}
+
+.bg-primary-2 {
+  background: var(--russian-violet-to-neon-blue);
+}
+
+.bg-secondary {
+  background-color: var(--sky-blue-color);
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}

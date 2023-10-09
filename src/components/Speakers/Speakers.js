@@ -1,6 +1,6 @@
 const Speakers = () => {
   return (
-    <section className="speakers-section">
+    <section className="speakers-section bg-primary-2">
       <div className="section-wrapper">
         <h2>Speakers</h2>
         <div class="speakers-section__grid">

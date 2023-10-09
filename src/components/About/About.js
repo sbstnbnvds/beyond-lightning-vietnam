@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="about-section">
+    <section className="about-section bg-primary-2">
       <div className="section-wrapper">
         <div className="about-section__main">
           <h2 className="about-section__main-title">Bitcoin & Lightning Conference</h2>

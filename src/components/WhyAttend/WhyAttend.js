@@ -1,6 +1,6 @@
 const WhyAttend = () => {
   return (
-    <section className="why-attend-section">
+    <section className="why-attend-section bg-primary-1">
       <div className="section-wrapper">
         <h2>Attend?</h2>
         <div className="grid">
