@@ -1,0 +1,47 @@
+.bg-primary-1 {
+  background: var(--neon-blue-to-russian-violet);
+}
+
+.bg-primary-2 {
+  background: var(--russian-violet-to-neon-blue);
+}
+
+.bg-secondary {
+  background-color: var(--sky-blue-color);
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: var(--font-size-900);
+  font-weight: var(--font-weight-black);
+}
+
+h3 {
+  font-size: var(--font-size-500);
+  font-weight: var(--font-weight-black);
+}
+h2, h3 {
+
+  background: var(--horizontal-american-yellow-to-persian-rose);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+p {
+  font-weight: var(--font-weight-semibold);
+}

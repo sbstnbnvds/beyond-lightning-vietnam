@@ -3,9 +3,9 @@ const Speakers = () => {
     <section className="speakers-section bg-primary-2">
       <div className="section-wrapper">
         <h2>Speakers</h2>
-        <div class="speakers-section__grid">
+        <div className="speakers-section__grid">
           <div>
-            speaker card
+            speakesr card
           </div>
         </div>
       </div>

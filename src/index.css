@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font: inherit
+  font: inherit;
 }
 
 ul[role='list'],
@@ -14,9 +14,16 @@ ol[role='list'] {
   list-style: none;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--sky-blue-color);
+  font-size: var(--font-size-300);
+}
+
 img {
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
 }
@@ -39,12 +46,12 @@ a {
   /* color gradients  */
   --russian-violet-to-neon-blue: linear-gradient(var(--russian-violet-color), var(--neon-blue-color));
   --neon-blue-to-russian-violet: linear-gradient(var(--neon-blue-color), var(--russian-violet-color));
-  
-  --persian-rose-to-american-yellow: linear-gradient(var(--persian-rose-color), var(--american-yellow-color));
-  --american-yellow-to-persian-rose: linear-gradient(var(--american-yellow-color), var(--persian-rose-color));
 
-  --horizontal-persian-rose-to-american-yellow: linear-gradient(90deg, var(--persian-rose-color), var(--american-yellow-color));
-  --horizontal-american-yellow-to-persian-rose: linear-gradient(90deg, var(--american-yellow-color), var(--persian-rose-color));
+  --persian-rose-to-american-yellow: linear-gradient(var(--persian-rose-color) -10%, var(--american-yellow-color));
+  --american-yellow-to-persian-rose: linear-gradient(180deg, var(--persian-rose-color) -10%, var(--american-yellow-color));
+
+  --horizontal-persian-rose-to-american-yellow: linear-gradient(90deg, var(--persian-rose-color) -10%, var(--american-yellow-color));
+  --horizontal-american-yellow-to-persian-rose: linear-gradient(270deg, var(--persian-rose-color) -10%, var(--american-yellow-color));
 
   /* font weights  */
   --font-weight-regular: 400;
@@ -53,31 +60,10 @@ a {
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
   --font-weight-black: 900;
-}
 
-.bg-primary-1 {
-  background: var(--neon-blue-to-russian-violet);
-}
-
-.bg-primary-2 {
-  background: var(--russian-violet-to-neon-blue);
-}
-
-.bg-secondary {
-  background-color: var(--sky-blue-color);
-}
-
-.section-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
+  /* font sizes  */
+  --font-size-300: clamp(0.875rem, 0.5036rem + 1.5238vw, 1.875rem);
+  --font-size-400: clamp(1.125rem, 0.6143rem + 2.0952vw, 2.5rem);
+  --font-size-500: clamp(1.375rem, 0.6786rem + 2.8571vw, 3.25rem);
+  --font-size-900: clamp(2.625rem, 1.5107rem + 4.5714vw, 5.625rem);
 }
