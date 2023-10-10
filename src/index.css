@@ -9,8 +9,8 @@
   font: inherit;
 }
 
-ul[role='list'],
-ol[role='list'] {
+ul,
+ol {
   list-style: none;
 }
 

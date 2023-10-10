@@ -1,0 +1,42 @@
+.why-attend-section h2 {
+    margin-top: 2em;
+}
+
+.why-attend-section h2 span {
+    text-align: center;
+    width: 100%;
+}
+
+.why-attend-section h3 {
+    background: var(--horizontal-persian-rose-to-american-yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-top: 0.75em;
+}
+
+.why-attend-section .flex {
+    flex-wrap: wrap;
+}
+.why-attend-section .grid-item img{
+    aspect-ratio: 1/1;
+    width: min(2.1168rem + 5.9813vw, 7.5rem);
+}
+
+.why-attend-section .grid-item {
+    align-items: center;
+    margin-top: 2em;
+    flex: 1 1 450px;
+    padding: 0;
+}
+
+.why-attend-section p {
+    margin-top: 1em;
+}
+
+@media (min-width: 1000px) {
+    .why-attend-section .grid-item {
+        padding: 0 1.25em;
+        justify-content: space-between;
+    }
+    
+}
