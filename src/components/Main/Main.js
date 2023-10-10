@@ -1,5 +1,5 @@
 import "./Main.css"
-
+import bannerImage from "../../assets/BannerImage.png"
 
 const Main = () => {
   return (
@@ -15,7 +15,7 @@ const Main = () => {
         </div>
       </div>
       <div className="main-section__image">
-        <img src="https://picsum.photos/600" alt="Vietnam Landscape" />
+        <img src={bannerImage} alt="Vietnam Landscape" />
       </div>
     </main>
   )
