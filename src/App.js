@@ -11,8 +11,8 @@ import './fonts/Asher Punk/Asher Punk.ttf';
 function App() {
   return (
     <div className="App">
-      {/* <Navbar/> */}
       <Routes>
+      {/* <Navbar/> */}
         <Route path="/ticketing" element={ <TicketingPage /> }></Route>
         
         <Route exact path="/" element={ <LandingPage/> }/>

@@ -1,3 +1,6 @@
+.App {
+  overflow-x: hidden;
+}
 .bg-primary-1 {
   background: var(--neon-blue-to-russian-violet);
 }
@@ -15,8 +18,19 @@
   flex-direction: column;
   align-items: center;
   padding: 0 2em;
+  max-width: 1440px;
+  margin: auto;
 }
 
+.asher-punk {
+  font-family: "Asher Punk";
+  font-weight: var(--font-weight-regular);
+}
+
+span.break-span::after {
+  content: "\a";
+  white-space: pre;
+}
 .flex {
   display: flex;
 }
@@ -35,10 +49,12 @@ h3 {
   font-size: var(--font-size-500);
   font-weight: var(--font-weight-black);
 }
-h2, h3 {
 
+h2,
+h3 {
   background: var(--horizontal-american-yellow-to-persian-rose);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
