@@ -1,8 +1,8 @@
 import "./About.css";
-import leftArrow from "../../assets/SliderArrowLeft.svg";
-import rightArrow from "../../assets/SliderArrowRight.svg";
 import calendar from "../../assets/CalendarIcon.png"
 import location from "../../assets/LocationIcon.png"
+
+import Slider from "./Slider.js"
 
 const About = () => {
   return (
@@ -36,7 +36,7 @@ const About = () => {
             <img src="https://picsum.photos/840/600" alt="Video" />
           </div>
         </div>
-        <div className="slider">Slider</div>
+        {/* <div className="slider">Slider</div> */}
       </div>
     </section>
   )
