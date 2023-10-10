@@ -1,3 +1,7 @@
+.main-section__header {
+    z-index: 400;
+}
+
 h1.main-section__header__title {
     padding-top: 2.5em;
     font-size: clamp(2.5rem, 0.6893rem + 7.4286vw, 7.375rem);

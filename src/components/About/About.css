@@ -1,3 +1,5 @@
+/* Main Section */
+
 .about-section__main {
     align-items: center;
     display: flex;
@@ -14,9 +16,7 @@
 
 .about-section__main h2 {
     padding-left: 1em;
-    position: relative;
     width: 7.25em;
-
 }
 
 .about-section__main__title-wrapper {
@@ -36,6 +36,7 @@
 
 @media (min-width: 910px) {
     .about-section__main__title-wrapper {
+        padding-bottom: 0;
         margin-bottom: 0;
         border-bottom: 0px;
         border-right: 2px solid var(--sky-blue-color);
@@ -45,4 +46,99 @@
     .about-section__main p {
         margin-left: 3.375em;
     }
+}
+
+/* Secondary Section  */
+.about-section__secondary {
+    align-items: center;
+}
+.about-section__secondary__info h3 {
+    margin-top: 2.0625em;
+    width: 6.25em;
+    text-align: center;
+    align-self: center;
+    background: var(--horizontal-persian-rose-to-american-yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.about-section__secondary__info h3 span {
+    width: 100%;
+}
+
+.about-section__secondary__info__text {
+    margin-top: 2em;
+}
+
+.about-section__secondary__info__text>div {
+    flex: 1 1 0px;
+}
+
+.about-section__secondary__info__text p {
+    background: var(--horizontal-persian-rose-to-american-yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 0 0.25em;
+}
+
+.about-section__secondary__info__text span {
+    font-weight: var(--font-weight-black);
+}
+
+.about-section__secondary__info__text>.flex {
+    align-items: center;
+    padding: 0 1em
+}
+
+.about-section__secondary__info__text>.flex:first-child {
+    border-right: 2px solid var(--sky-blue-color);
+}
+.about-section__secondary__info__text .icon-wrapper {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max(1.75rem, 0.8855rem + 3.7383vw);
+}
+
+.about-section__secondary__info__text .icon-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Video */
+
+.video-wrapper {
+    margin-top: 2.75em;
+    width: min(8.257rem + 49.1589vw, 52.5rem)
+}
+
+@media (min-width: 768px) {
+    .about-section__secondary__info{
+        margin-left: 2em;
+    }
+    .about-section__secondary__info__text {
+        flex-direction: column;
+        margin-top: 0.75em;
+    }
+
+    .about-section__secondary {
+        flex-direction: row-reverse;
+    }
+    .about-section__secondary__info__text>.flex{
+        margin: 0;
+        padding: 0%;
+    }
+
+    .about-section__secondary__info__text>.flex:first-child{
+        margin-bottom: 1em;
+        border: 0;
+    }
+
+}
+
+/* Slider */
+.slider {
+    background-color: azure;
 }
