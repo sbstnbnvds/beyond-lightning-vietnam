@@ -1,11 +1,17 @@
+import "./About.css"
+
 const About = () => {
   return (
     <section className="about-section bg-primary-2">
       <div className="section-wrapper">
         <div className="about-section__main">
-          <h2 className="about-section__main-title">Bitcoin & Lightning Conference</h2>
+          <div className="about-section__main__title-wrapper">
+          <h2 className="about-section__main-title"><span className="break-span">The only </span> Bitcoin & Lightning Conference <span className="secondary-span"> in Vietnam</span></h2>
+
+          </div>
           <div>
-            <p>Welcome to the official website of Beyond Lightning Vietnam, powered by company name, by NeutronPay. The premier conference focusing on the future of Bitcoin, the Lightning Network and more! This is your exclusive invitation to be part of a circle of innovators steering the course of future developments.</p>
+            <p>Welcome to the official website of Beyond Lightning Vietnam, powered by company name, by NeutronPay.</p> 
+            <p>The premier conference focusing on the future of Bitcoin, the Lightning Network and more! This is your exclusive invitation to be part of a circle of innovators steering the course of future developments.</p>
           </div>
         </div>
         <div className="about-section__secondary">

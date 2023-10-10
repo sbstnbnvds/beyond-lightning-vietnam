@@ -22,9 +22,19 @@
   margin: auto;
 }
 
-.asher-punk {
+.asher-punk, h2 span, h3 span {
   font-family: "Asher Punk";
   font-weight: var(--font-weight-regular);
+}
+
+h2 span, h3 span {
+  position: absolute;
+  bottom: 100%;
+  line-height: 75%;
+}
+
+span {
+  color: var(--sky-blue-color);
 }
 
 span.break-span::after {
