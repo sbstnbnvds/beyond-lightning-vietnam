@@ -37,6 +37,7 @@
     font-weight: var(--font-weight-black);
     font-size: 1em;
     text-align: center;
+    color: var(--russian-violet-color);
 }
 
 .speakers-section__cards__card .card-content p {
