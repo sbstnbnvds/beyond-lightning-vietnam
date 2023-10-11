@@ -1,139 +1,163 @@
 import ElizabethStark from "../../assets/speakers/ElizabethStark.png"
+import JimmySong from "../../assets/speakers/Jimmy Song.png";
+import AlbertBuu from "../../assets/speakers/Albert Buu.png";
+import DominikWeil from "../../assets/speakers/Dominik Weil.png";
+import StephanLivera from "../../assets/speakers/Stephan Livera.png";
+import PeterTodd from "../../assets/speakers/Peter Todd.png";
+import MalcolmWeed from "../../assets/speakers/Malcolm Weed.png";
+import DeaRezkitha from "../../assets/speakers/Dea Rezkitha.png";
+import KojiHigashi from "../../assets/speakers/Koji Higashi.png";
+import KgothatsoNgako from "../../assets/speakers/Kgothatso Ngako.png";
+import JackLee from "../../assets/speakers/Jack Lee.png";
+import MikeJarmuz from "../../assets/speakers/Mike _Muzz_ Jarmuz.png";
+import LouisLui from "../../assets/speakers/Louis Lui.png";
+import AndreasKohl from "../../assets/speakers/Andres EJ Kohl.png";
+import LeonhardWeese from "../../assets/speakers/Leonhard Weese.png";
+import Piriya from "../../assets/speakers/Piriya.png";
+import JeremyShowalter from "../../assets/speakers/Jeremy Showalter.png";
+import RolandBewick from "../../assets/speakers/Roland Bewick.png";
+import AdamMashrique from "../../assets/speakers/Adam Mashrique.png";
+import AndrewPantyukhin from "../../assets/speakers/Andrew Pantyukhin.png";
+
 
 const SpeakersList = () => {
 
-    var ListOfSpeakers = {
-        Speaker1: {
-            Name: "John Doe",
-            Job: "CEO & Entrepreneur",
-            Picture: { ElizabethStark }
+    var ListOfSpeakers = [
+        {
+            id: 1, 
+            name: "Elizabeth Stark",
+            job: "Co Founder & CEO Lightning Labs",
+            img: ElizabethStark
         },
-        Speaker2: {
-            Name: "Jane Doe",
-            Job: "CEO & Founder",
-            Picture: { ElizabethStark }
+        {
+            id: 2,
+            name: "Jimmy Song",
+            job: "Bitcoin Expert Open source Coder",
+            img: JimmySong
+        },    
+        {
+            id: 3,
+            name: "Albert Buu",
+            job: "Founder & CEO Neutronpay",
+            img: AlbertBuu
         },
-        Speaker3: {
-            Name: "Alice Smith",
-            Job: "CTO",
-            Picture: { ElizabethStark }
+        {
+            id: 4,
+            name: "Dominik Weil",
+            job: "Co Founder & COO BitcoinVN",
+            img: DominikWeil
         },
-        Speaker4: {
-            Name: "Bob Johnson",
-            Job: "COO",
-            Picture: { ElizabethStark }
+        {
+            id: 5,
+            name: "Stephan Livera",
+            job: "Head of Education Swan Bitcoin",
+            img: StephanLivera
         },
-        Speaker5: {
-            Name: "Eva Williams",
-            Job: "CMO",
-            Picture: { ElizabethStark }
+        {
+            id: 6,
+            name: "Peter Todd",
+            job: "Crypto-chronomancer",
+            img: PeterTodd
         },
-        Speaker6: {
-            Name: "David Brown",
-            Job: "CTO",
-            Picture: { ElizabethStark }
+        {
+            id: 7,
+            name: "Malcolm Weed",
+            job: "COO - Neutronpay & Bitcoin Beach Vietnam",
+            img: MalcolmWeed
         },
-        Speaker7: {
-            Name: "Sarah Green",
-            Job: "CFO",
-            Picture: { ElizabethStark }
+        {
+            id: 8,
+            name: "Dea Rezkitha",
+            job: "Chair, Indonesia Bitcoin Community",
+            img: DeaRezkitha
         },
-        Speaker8: {
-            Name: "Mark Davis",
-            Job: "Chief Product Officer",
-            Picture: { ElizabethStark }
+        {
+            id: 9,
+            name: "Koji Higashi",
+            job: "Co Founder Diamond Hands",
+            img: KojiHigashi
         },
-        Speaker9: {
-            Name: "Laura White",
-            Job: "VP of Marketing",
-            Picture: { ElizabethStark }
+        {
+            id: 10,
+            name: "Kgothatso Ngako",
+            job: "Founder & CEO Machankura",
+            img: KgothatsoNgako
         },
-        Speaker10: {
-            Name: "Michael Wilson",
-            Job: "VP of Sales"
+        {
+            id: 11,
+            name: "Jack Lee",
+            job: "Managing Partner HCM Capital",
+            img: JackLee
         },
-        Speaker11: {
-            Name: "Olivia Lee",
-            Job: "Director of Operations",
-            Picture: { ElizabethStark }
+        {
+            id: 12,
+            name: "Mike \"Muzz\" Jarmuz",
+            job: "Managing Partner Lightning Ventures",
+            img: MikeJarmuz
         },
-        Speaker12: {
-            Name: "Chris Turner",
-            Job: "Product Manager",
-            Picture: { ElizabethStark }
+        {
+            id: 13,
+            name: "Louis Lui",
+            job: "Founder and CEO Mimesis Capital",
+            img: LouisLui
         },
-        Speaker13: {
-            Name: "Sophia Clark",
-            Job: "Software Engineer",
-            Picture: { ElizabethStark }
+        {
+            id: 14,
+            name: "Andreas EJ Kohl",
+            job: "Co Founder Sequentia",
+            img: AndreasKohl
         },
-        Speaker14: {
-            Name: "Daniel Hall",
-            Job: "UX Designer",
-            Picture: { ElizabethStark }
+        {
+            id: 15,
+            name: "Leonhard Weese",
+            job: "Bitcoin Association Hong Kong",
+            img: LeonhardWeese
         },
-        Speaker15: {
-            Name: "Ava Martin",
-            Job: "Data Analyst",
-            Picture: { ElizabethStark }
+        {
+            id: 16,
+            name: "Piriya",
+            job: "Self Hosted Person Rightshift",
+            img: Piriya
         },
-        Speaker16: {
-            Name: "William Taylor",
-            Job: "HR Manager",
-            Picture: { ElizabethStark }
+        {
+            id: 17,
+            name: "Jeremy Showalter",
+            job: "VP Product Swan Bitcoin",
+            img: JeremyShowalter
         },
-        Speaker17: {
-            Name: "Grace Baker",
-            Job: "Graphic Designer",
-            Picture: { ElizabethStark }
+        {
+            id: 18,
+            name: "Roland Bewick",
+            job: "Development Lead Alby",
+            img: RolandBewick
         },
-        Speaker18: {
-            Name: "Jack Parker",
-            Job: "Sales Manager",
-            Picture: { ElizabethStark }
+        {
+            id: 19,
+            name: "Adam Mashrique",
+            job: "Hardware Developer Safegate Labs",
+            img: AdamMashrique
         },
-        Speaker19: {
-            Name: "Nora Miller",
-            Job: "IT Specialist",
-            Picture: { ElizabethStark }
+        {
+            id: 20,
+            name: "Andrew Pantyukhin",
+            job: "Software Architect Independent Researcher",
+            img: AndrewPantyukhin
         },
-        Speaker20: {
-            Name: "Lucas Adams",
-            Job: "Financial Analyst",
-            Picture: { ElizabethStark }
-        },
-        Speaker21: {
-            Name: "Chloe Harris",
-            Job: "Marketing Coordinator",
-            Picture: { ElizabethStark }
-        },
-        Speaker22: {
-            Name: "Samuel Scott",
-            Job: "Accountant",
-            Picture: { ElizabethStark }
-        },
-        Speaker23: {
-            Name: "Lily Moore",
-            Job: "Public Relations Specialist",
-            Picture: { ElizabethStark }
-        },
-        Speaker24: {
-            Name: "Andrew Reed",
-            Job: "Event Planner",
-            Picture: { ElizabethStark }
-        }
-    };
-
+    ];
 
     return (
         <div className="speakers-section__cards">
-            <div className="speakers-section__cards__card flex">
-                    <img src={ElizabethStark} alt="" />
-                <div className="card-content flex-column">
-                    <strong>Elizabeth Stark</strong>
-                    <p>CEO & Bitcoiner Lightning</p>
-                </div>
-            </div>
+            {ListOfSpeakers.map(Speaker => {
+                return (
+                    <div className="speakers-section__cards__card flex" key={Speaker.id}>
+                        <img src={Speaker.img} alt={Speaker.name + " picture"} />
+                        <div className="card-content flex-column">
+                            <strong>{Speaker.name}</strong>
+                            <p>{Speaker.job}</p>
+                        </div>
+                    </div>
+                )
+            })}
         </div>
     )
 }

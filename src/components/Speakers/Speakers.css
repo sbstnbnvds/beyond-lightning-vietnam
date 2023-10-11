@@ -3,10 +3,15 @@
     font-size: clamp(2.75rem, 0.7536rem + 8.1905vw, 8.125rem);
 }
 
+.speakers-section__cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .speakers-section__cards__card {
     position: relative;
     aspect-ratio: 1 / 1;
-    
+    margin: 1em 0.125em;
+
     border-radius: 50%;
     --font-size-cards: clamp(8.875rem, 5.8107rem + 12.5714vw, 17.125rem);
     height: var(--font-size-cards);
@@ -36,17 +41,17 @@
 
 .speakers-section__cards__card .card-content p {
     font-weight: var(--font-weight-medium);
-    font-size: 0.875em;
+    font-size: 0.8125em;
     text-align: center;
     color: black;
 }
 
-.speakers-section__cards__card .card-content img {
+.speakers-section__cards__card img {
     position: absolute;
-    top: -2px;
-    height: 105%;
+    min-height: 100%;
     width: 100%;
-    object-fit: cover; 
+    height: auto;
+    object-fit: cover;
 }
 
 .speakers-section__cards__card:hover .card-content {
