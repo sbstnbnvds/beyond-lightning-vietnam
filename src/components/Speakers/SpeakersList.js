@@ -1,4 +1,4 @@
-import ElizabethStark from "../../assets/ElizabethStark.png"
+import ElizabethStark from "../../assets/speakers/ElizabethStark.png"
 
 const SpeakersList = () => {
 
