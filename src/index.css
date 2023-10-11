@@ -36,7 +36,9 @@ a {
 
 :root {
   /* color palette */
-  --sky-blue-color: #55e7ff;
+  --sky-blue-color-hsl: 188, 100%, 67%;
+  
+  --sky-blue-color: hsl(var(--sky-blue-color-hsl));
   --vivid-sky-blue-color: #00ccfd;
   --persian-rose-color: #ff34b3;
   --neon-blue-color: #2011a2;

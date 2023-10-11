@@ -1,0 +1,54 @@
+.speakers-section h2 {
+    margin-top: 1em;
+    font-size: clamp(2.75rem, 0.7536rem + 8.1905vw, 8.125rem);
+}
+
+.speakers-section__cards__card {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    
+    border-radius: 50%;
+    --font-size-cards: clamp(8.875rem, 5.8107rem + 12.5714vw, 17.125rem);
+    height: var(--font-size-cards);
+    justify-content: center;
+    overflow: hidden;
+}
+
+.speakers-section__cards__card .card-content {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 1em;
+    background-color: hsl(var(--sky-blue-color-hsl), 50%);
+    transform: translateY(-100%) translateX(50%);
+    transition: 0.275s ease-out;
+    border-radius: 1000px;
+}
+
+.speakers-section__cards__card .card-content strong {
+    font-weight: var(--font-weight-black);
+    font-size: 1em;
+    text-align: center;
+}
+
+.speakers-section__cards__card .card-content p {
+    font-weight: var(--font-weight-medium);
+    font-size: 0.875em;
+    text-align: center;
+    color: black;
+}
+
+.speakers-section__cards__card .card-content img {
+    position: absolute;
+    top: -2px;
+    height: 105%;
+    width: 100%;
+    object-fit: cover; 
+}
+
+.speakers-section__cards__card:hover .card-content {
+    transform: translateY(0);
+}
