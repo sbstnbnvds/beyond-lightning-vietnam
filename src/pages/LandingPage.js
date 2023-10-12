@@ -8,12 +8,9 @@ import MediaPartners from "../components/MediaPartners/MediaPartners"
 import GetInvolved from "../components/GetInvolved/GetInvolved"
 import ContactUs from "../components/ContactUs/ContactUs"
 
-// import TopSection from "../components/TopSection"
-
 
 const LandingPage = () => {
   return (<>
-    {/* <TopSection /> */}
     <Main/>
     <About/>
     <WhyAttend />
@@ -21,8 +18,8 @@ const LandingPage = () => {
     {/* <SideEvents/> */}
     <Sponsors/>
     <MediaPartners/>
-    <GetInvolved/>
-    <ContactUs/>
+    {/* <GetInvolved/>
+    <ContactUs/> */}
 
 
   </>
