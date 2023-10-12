@@ -1,12 +1,13 @@
 .icons-section h2 {
     text-transform: uppercase;
     color: var(--persian-rose-color);
-    padding: 0.5em 0;
+    margin: 0.5em 0 0 0;
 }
 
 .icons-section .icons-list {
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 2.5em;
 }
 
 .icons-section .icons-list .icon-wrapper {
