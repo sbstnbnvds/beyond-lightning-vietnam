@@ -4,3 +4,20 @@
     padding: 0.5em 0;
 }
 
+.icons-section .icons-list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.icons-section .icons-list .icon-wrapper {
+    margin: 1.25em 0.75em;
+    width: min(2.9583rem + 22.4074vw, 23.125rem);
+    min-width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-section .icons-list .icon-wrapper img {
+    object-fit: cover;
+}

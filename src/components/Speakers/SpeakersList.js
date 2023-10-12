@@ -146,7 +146,7 @@ const SpeakersList = () => {
     ];
 
     return (
-        <div className="speakers-section__cards">
+        <div className="speakers-section__cards flex">
             {ListOfSpeakers.map(Speaker => {
                 return (
                     <div className="speakers-section__cards__card flex" key={Speaker.id}>
