@@ -1,6 +1,8 @@
+import SimpleTicketingPackages from "../components/SimpleTicketingPackages/SimpleTicketingPackages"
+
 const TicketingPage = () => {
   return (
-    <div>TicketingPage</div>
+    <SimpleTicketingPackages/>
   )
 }
 

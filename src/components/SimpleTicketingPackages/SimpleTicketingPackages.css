@@ -1,0 +1,42 @@
+.ticketing-section {
+    padding-top: 8em;
+    position: relative;
+    align-items: center;
+}
+
+.ticketing-section .section-wrapper {
+    align-items: baseline;
+    padding: 0;
+    margin: 0;
+    width: min(100vw, 1440px);
+}
+
+.ticketing-section h2 {
+    display: block;
+    width: 2.74em;
+    color: var(--neon-blue-color);
+    background: none;
+}
+
+.ticketing-section h2 span {
+    color: transparent;
+    background: var(--horizontal-persian-rose-to-american-yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.ticketing-section .double-bg {}
+
+.double-bg .sky-blue-background {
+    width: 50%;
+    height: 100%;
+    background-color: var(--sky-blue-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.ticketing-section .images {
+    z-index: 1;
+}
