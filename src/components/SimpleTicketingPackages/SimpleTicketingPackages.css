@@ -1,14 +1,22 @@
 .ticketing-section {
-    padding-top: 8em;
     position: relative;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ticketing-section .main-ticketing-section {
+    padding-top: 3.5em;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 2em;
 }
 
 .ticketing-section .section-wrapper {
     align-items: baseline;
     padding: 0;
     margin: 0;
-    width: min(100vw, 1440px);
 }
 
 .ticketing-section h2 {
@@ -16,6 +24,7 @@
     width: 2.74em;
     color: var(--neon-blue-color);
     background: none;
+    margin-bottom: 0.4375em;
 }
 
 .ticketing-section h2 span {
@@ -25,7 +34,6 @@
     background-clip: text;
 }
 
-.ticketing-section .double-bg {}
 
 .double-bg .sky-blue-background {
     width: 50%;
@@ -39,4 +47,141 @@
 
 .ticketing-section .images {
     z-index: 1;
+    width: min(10.8608rem + 35.8491vw, 43.125rem);
+}
+
+.images .picture-wrapper {
+    position: relative;
+
+    margin: 2px 0;
+    padding: 0.3125em 0;
+}
+
+.images .picture-wrapper .picture {
+    z-index: 2;
+    position: relative;
+}
+.images .picture-wrapper .picture-frame {
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.ticketing-section .simple-ticketing {
+    z-index: 2;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
+    /* background-color: transparent;   */
+}
+
+.ticketing-section .simple-ticketing h3 {
+    padding-bottom: 1em;
+}
+.ticketing-section .simple-ticketing h3 span {
+    white-space: nowrap;
+    left: -0.5em;
+}
+
+.ticketing-section .simple-ticketing .section-wrapper {
+    padding-top: 3em;
+    width: clamp(13.4375rem, 7.7083rem + 25.463vw, 30.625rem);
+}
+
+
+.ticketing-section .simple-ticketing h4 {
+    background: var(--horizontal-american-yellow-to-persian-rose);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: var(--font-weight-black);
+}
+
+.ticketing-section .simple-ticketing .event-info {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.ticketing-section .simple-ticketing .event-info>div.img {
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.ticketing-section .simple-ticketing .event-info .img {
+    width: clamp(2.5rem, 1.6355rem + 3.7383vw, 5rem);
+    height: clamp(2.5rem, 1.6355rem + 3.7383vw, 5rem);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 1em;
+}
+
+.ticketing-section .simple-ticketing .event-info img {
+    flex: 1 1 0;
+    object-fit: scale-down;
+    max-height: 100%;
+
+}
+
+.ticketing-section .simple-ticketing .button {
+    margin-top: 1em;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    color: var(--russian-violet-color);
+}
+
+.ticketing-section .simple-ticketing a {
+    font-size: var(--font-size-400);
+    font-weight: var(--font-weight-black);
+    color: var(--russian-violet-color);
+    background: var(--horizontal-american-yellow-to-persian-rose);
+    text-transform: uppercase;
+    padding: 0.5em 0.5em;
+    border-radius: 100px;
+}
+
+@media (min-width: 880px) {
+
+    .main-ticketing-section,
+    .simple-ticketing {
+        flex: 0 0 390px;
+        align-items: center;
+    }
+
+    .simple-ticketing {
+        padding-left: 2em;
+        padding-top: 10em;
+        background-color: transparent;
+        /* padding-left: 1.5em; */
+    }
+}
+
+@media (max-width: 880px) {
+
+    .main-ticketing-section {
+        flex-grow: 1;
+    }
+
+    .simple-ticketing {
+        padding-bottom: 3em;
+    }
+
+    .simple-ticketing .section-wrapper h3{
+        align-self: center;
+    }
+
+
+
+}
+
+@media (min-width: 1880px) {
+
+    .simple-ticketing {
+        flex-basis: 500px
+    }
 }
