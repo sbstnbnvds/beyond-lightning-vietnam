@@ -1,0 +1,50 @@
+section.schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sky-blue-color);
+  padding-bottom: 2em;
+}
+
+.schedule h2 span {
+  position: inherit;
+  background: var(--horizontal-persian-rose-to-american-yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+}
+.schedule h2 {
+  text-align: center;
+  color: var(--russian-violet-color);
+  padding-top: 0.5625;
+}
+
+.schedule .bg-gradient {
+  background: var(--horizontal-persian-rose-to-american-yellow);
+}
+
+.schedule > .bg-gradient {
+  margin: 0.25em 0;
+  padding: 3px;
+  width: clamp(19.4375rem, -2.1286rem + 88.4762vw, 77.5rem);
+}
+
+.schedule .bg-gradient .bg-secondary {
+  width: 100%;
+}
+.schedule .bg-gradient .bg-secondary p {
+
+  /* width: 78%; */
+  flex: 0 1 auto;
+  color: var(--russian-violet-color);
+  margin: 0.75em 1em;
+}
+.schedule .bg-gradient .bg-gradient {
+  width: 22%;
+  flex: 0 0 auto;
+  font-size: 1.6875em;
+  font-weight: var(--font-weight-black);
+  justify-content: center;
+  align-items: center;
+}
