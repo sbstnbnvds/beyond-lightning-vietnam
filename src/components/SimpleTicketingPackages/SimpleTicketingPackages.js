@@ -55,7 +55,7 @@ const SimpleTicketingPackages = () => {
                             <p>March 29-30, 2024</p>
                         </div>
                     </div>
-                    <div className="button"><a href="#">Get your tickets</a></div>
+                    <div className="button"><a href="#get-your-tickets">Get your tickets</a></div>
                 </div>
             </div>
         </section>

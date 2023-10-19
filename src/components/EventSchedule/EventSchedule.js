@@ -84,7 +84,7 @@ const EventSchedule = () => {
     <section className="schedule">
       <h2><span className="break-span">Event </span>Schedule</h2>
       {ListOfEvents.map((event) =>
-        < div className="bg-gradient flex" >
+        <div key={event.id} className="bg-gradient flex" >
           <div className="bg-secondary flex">
             <div className="bg-gradient flex">
               {event.time}

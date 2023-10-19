@@ -1,0 +1,139 @@
+section.get-your-tickets {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--sky-blue-color);
+  color: var(--russian-violet-color);
+  align-items: center;
+}
+
+.get-your-tickets h2 {
+  margin: 0.5em 0;
+  color: var(--russian-violet-color);
+}
+
+.get-your-tickets h2 span{
+  background: var(--horizontal-persian-rose-to-american-yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding-left: 0.0625em;
+  white-space: nowrap;
+}
+.get-your-tickets .cards {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.get-your-tickets .card {
+
+  background: #F2A900;
+  background: radial-gradient(at right bottom, #F2A900, #FF34B3);
+  width: clamp(17.5rem, 10.0714rem + 30.4762vw, 37.5rem);
+  /* height: 16em; */
+  height: 20em;
+  border-radius: 1em;
+  padding: 1em 1.5em;
+  margin: 0.875em 0.5em;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.get-your-tickets .card h3 {
+  color: var(--neon-blue-color);
+  text-align: center;
+  line-height: 75%;
+  margin-bottom: 0.5em;
+  font-size: 1.6875em;
+}
+
+.get-your-tickets .card .card-container {
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.get-your-tickets .card h3 span {
+  position: inherit;
+
+}
+
+.get-your-tickets .card .card-container .subtext {
+  color: var(--sky-blue-color);
+  margin-top: 1em;
+}
+
+.get-your-tickets .card .card-container ul {
+  list-style: square;
+  width: 80%;
+  margin-top: auto;
+  margin-bottom: 3em;
+}
+
+.get-your-tickets .card:last-child .card-container ul {
+  margin-top: 1em;
+  margin-bottom: auto;
+}
+.get-your-tickets .card .card-container li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0;
+  align-items: center;
+}
+
+
+.get-your-tickets .card .card-container li:last-child p span {
+  font-weight: var(--font-weight-semibold);
+}
+
+.get-your-tickets .card:last-child .card-container li p span::before {
+  content: "\a";
+  white-space: pre;
+}
+.get-your-tickets .card .card-container li .price {
+  font-weight: var(--font-weight-black);
+  padding-left: 1em;
+  position: relative;
+  color: var(--sky-blue-color);
+  font-size: var(--font-size-400);
+  width: 3em;
+  margin-right: 0;
+}
+
+.get-your-tickets .card .card-container li .price::before {
+  content: '';
+  height: 100%;
+  width: 2px;
+  background-color: var(--russian-violet-color);
+  position: absolute;
+  left: 0;
+}
+
+.get-your-tickets .card a {
+  position: absolute;
+  width: 11em;
+  height: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0%;
+  right: 0%;
+  bottom: -1em;
+  background: linear-gradient(270deg, var(--russian-violet-color), var(--neon-blue-color));
+  border: none;
+  color: var(--sky-blue-color);
+  border-radius: 0.5em;
+  font-weight: var(--font-weight-extrabold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 2520px) {
+  .cards {
+    max-width: 1400px;
+  }
+}
