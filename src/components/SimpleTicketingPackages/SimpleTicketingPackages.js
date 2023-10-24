@@ -43,7 +43,7 @@ const SimpleTicketingPackages = () => {
                         </div>
                         <div className="flex-column">
                             <h4>Event location:</h4>
-                            <p>Furama Resort, Da Nang, Vietnam</p>
+                            <p>Furama Resort, Da&nbsp;Nang, Vietnam</p>
                         </div>
                     </div>
                     <div className="flex event-info">

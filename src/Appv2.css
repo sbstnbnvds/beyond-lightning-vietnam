@@ -1,6 +1,7 @@
 .App {
   overflow-x: hidden;
 }
+
 .bg-primary-1 {
   background: var(--neon-blue-to-russian-violet);
 }
@@ -26,12 +27,15 @@
   margin: auto;
 }
 
-.asher-punk, h2 span, h3 span {
+.asher-punk,
+h2 span,
+h3 span {
   font-family: "Asher Punk";
   font-weight: var(--font-weight-regular);
 }
 
-h2 span, h3 span {
+h2 span,
+h3 span {
   position: absolute;
   bottom: 100%;
   line-height: 75%;
@@ -45,6 +49,7 @@ span.break-span::after {
   content: "\a";
   white-space: pre;
 }
+
 .flex {
   display: flex;
 }
