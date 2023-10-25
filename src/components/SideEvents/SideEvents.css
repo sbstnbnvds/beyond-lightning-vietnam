@@ -1,0 +1,210 @@
+.side-events-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3em 0 2em 0;
+}
+
+.side-events-section .title {
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+.side-events-section .title h2 span {
+  left:20%
+}
+
+.side-events-section ul {
+  display: flex;
+  flex-direction: row;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 0.25em 0;
+  border-left: 2px solid var(--sky-blue-color);
+  margin-right: 0.5em;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+.side-events-section ul li{
+  margin: 1em;
+  flex: 0 1 auto;
+  text-align: center;
+}
+
+.side-events-section ul li:first-child {
+  margin-top: 0;
+}
+
+.side-events-section ul li:last-child {
+  margin-bottom: 0;
+}
+.side-events-section ul .active {
+  font-weight: var(--font-weight-black);
+}
+
+.side-events-section .main-div {
+  align-items: stretch;
+  justify-content: center;
+}
+
+.side-events-section .main-div .img-container {
+  overflow: hidden; 
+}
+
+.side-events-section .main-div .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.side-events-section .main-div .card {
+  background-color: aqua;
+  width: clamp(7.8125rem, 3.9811rem + 16.1321vw, 18.5rem);
+  align-items: center;
+  padding: 2em 1em;
+}
+
+.side-events-section .main-div .img-wrapper,
+.side-events-section .main-div .card {
+  height: clamp(28.25rem, 23.4104rem + 20.3774vw, 41.75rem);
+}
+
+.side-events-section .main-div .img-wrapper {
+  padding: 1em 0;
+  justify-content: stretch;
+}
+
+.side-events-section .main-div .img-wrapper>* {
+  flex: 1 1 auto;
+}
+
+.side-events-section .main-div .mobile-only {
+  display: none;
+}
+.side-events-section .main-div .wrapper-2 div:first-child {
+  flex-grow: 3;
+}
+.side-events-section .main-div .card .date {
+  font-size: var(--font-size-400);
+  color: var(--persian-rose-color);
+  font-weight: var(--font-weight-black);
+  border-bottom: 2px solid var(--persian-rose-color);
+  margin-bottom: 0.75em;
+}
+
+.side-events-section .main-div .wrapper-1 {
+  width: clamp(8.75rem, 3.3726rem + 22.6415vw, 23.75rem);
+}
+
+.side-events-section .main-div .wrapper-2 {
+  width: clamp(8.75rem, 5.1651rem + 15.0943vw, 18.75rem);
+}
+
+.side-events-section .main-div .wrapper-3 {
+  width: clamp(8.75rem, 6.2854rem + 10.3774vw, 15.625rem);
+}
+
+/* .side-events-section .main-div .wrapper-2 #container-3 {
+  position:relative;
+  
+} */
+
+.side-events-section .main-div .alt-bg {
+  position: relative;
+}
+
+.side-events-section .main-div .alt-bg>div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(var(--sky-blue-color-hsl), 50%);
+  top: 0;
+  left: 0;
+}
+
+.side-events-section .main-div .card p {
+  font-size: 0.75em;
+  font-weight: var(--font-weight-regular);
+  color: var(--neon-blue-color)
+}
+
+@media (min-width:341px) {
+  .side-events-section ul {
+    margin-right: 2em;
+  }
+}
+@media (max-width: 980px) {
+  .side-events-section .main-div .wrapper-3 {
+    display: none;
+  }  
+}
+
+@media (max-width: 650px) {
+  .side-events-section .main-div .wrapper-2 {
+    display: none;
+  }
+
+  .side-events-section .main-div .mobile-only {
+    display: block;
+  }
+}
+
+
+@media (min-width: 981px) {
+  .side-events-section {
+    padding-top: 1.75em;
+  }
+
+  .side-events-section .title {
+    flex-basis: auto;
+    align-self: flex-end;
+  }
+
+  .side-events-section .title h2 span{
+    left: auto;
+  }
+
+  .side-events-section ul {
+    writing-mode: horizontal-tb;
+    transform: rotate(0);
+    border: none;
+    border-bottom: 2px solid var(--sky-blue-color);
+    padding: 0.125em 0.125em;
+    margin: 2em 0;
+    margin-left: 1.75em;
+    /* border-left: 2px solid var(--sky-blue-color); */
+    position: relative;
+  }
+
+  .side-events-section ul::before{
+    content: '';
+    width: 4px;
+    background-color: var(--sky-blue-color);
+    height: 5em;
+    position: absolute;
+    left: -3%;
+  }
+
+  .side-events-section ul li {
+    margin: 0.25em 1em;
+  }
+
+
+  .side-events-section ul li:first-child{
+    margin-top: auto;
+    margin-left: 0;
+  }
+
+  .side-events-section ul li:last-child{
+    margin-bottom: auto;
+    margin-right: 0;
+  }
+
+  .side-events-section .main-div {
+    margin-top: 1em;
+    flex-basis: 100%;
+  }
+}

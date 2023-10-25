@@ -15,7 +15,7 @@ const LandingPage = () => {
     <About/>
     <WhyAttend />
     <Speakers />
-    {/* <SideEvents/> */}
+    <SideEvents/>
     <Sponsors/>
     <MediaPartners/>
     {/* <GetInvolved/>
