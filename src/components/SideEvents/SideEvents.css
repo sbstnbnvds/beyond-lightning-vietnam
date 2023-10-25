@@ -61,12 +61,23 @@
 }
 
 .side-events-section .main-div .card {
-  background-color: aqua;
+  background-color: var(--sky-blue-color);
   width: clamp(7.8125rem, 3.9811rem + 16.1321vw, 18.5rem);
   align-items: center;
-  padding: 2em 1em;
+  padding: 1em 1em;
+  position: relative;
 }
 
+.side-events-section .main-div .card .heading {
+  font-size: var(--font-size-900);
+  position: absolute;
+  bottom: 0.3125em;
+  right: 0.125em;
+}
+
+.side-events-section .main-div .card .heading h3 {
+  font-size: 1em;
+}
 .side-events-section .main-div .img-wrapper,
 .side-events-section .main-div .card {
   height: clamp(28.25rem, 23.4104rem + 20.3774vw, 41.75rem);
@@ -106,11 +117,6 @@
 .side-events-section .main-div .wrapper-3 {
   width: clamp(8.75rem, 6.2854rem + 10.3774vw, 15.625rem);
 }
-
-/* .side-events-section .main-div .wrapper-2 #container-3 {
-  position:relative;
-  
-} */
 
 .side-events-section .main-div .alt-bg {
   position: relative;

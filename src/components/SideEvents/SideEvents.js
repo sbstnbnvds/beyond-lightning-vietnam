@@ -38,11 +38,15 @@ const SideEvents = () => {
           </div>
         </div>
         <div className="card flex-column">
-          <p className="date">March 19</p>
+          <p className="date">March 29</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt est similique eos a, ab quasi adipisci maiores molestias!</p>
+          <div className="heading">
+            <h3><span className="span-break">1 - Day </span>Hackathon</h3>
+          </div>
+        
         </div>
         <div className="img-wrapper wrapper-2 flex-column">
-          <div className="img-container alt-bg" id="container-3">
+          <div className="img-container alt-bg">
             <img src={Hackathon3} alt="" />
             <div></div>
           </div>
