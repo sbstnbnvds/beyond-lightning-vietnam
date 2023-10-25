@@ -147,5 +147,6 @@ section.location>div {
 
   .location .bottom-div {
     position: static;
+    background: none;
   }
 }

@@ -70,7 +70,7 @@ h1.main-section__header__title {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 461px) {
     .main-section__image {
         height: 300px;
     }
