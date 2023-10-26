@@ -1,0 +1,155 @@
+.get-involved-section {
+  align-items: center;
+  padding-top: 3.5em;
+}
+
+.get-involved-section h2 {
+  margin-bottom: 0.25em;
+}
+
+.get-involved-section h2 span {
+  left: 30%;
+  bottom: 80%;
+}
+
+.get-involved-section .cards {
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+
+/* For Desktop version
+.get-involved-section .cards .card p {
+  width: 8.125em;
+} */
+
+
+.get-involved-section .cards .card {
+  flex-basis: 100%;
+  align-items: center;
+  margin-bottom: 3em;
+  position: relative;
+}
+
+.get-involved-section .cards .card::after {
+  content: '';
+  position: absolute;
+  width: 22.125em;
+  height: 2px;
+  background-color: var(--persian-rose-color);
+  background: var(--horizontal-persian-rose-to-american-yellow);
+  bottom: -15%;
+}
+
+.get-involved-section .cards .card .img-wrapper {
+  width: clamp(2.625rem, 0.8774rem + 7.3585vw, 7.5rem);
+  height: clamp(2.625rem, 0.8774rem + 7.3585vw, 7.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.25em;
+}
+
+.get-involved-section .cards .card h3 {
+  margin-bottom: 0.25em;
+  color: transparent;
+  background: var(--horizontal-persian-rose-to-american-yellow);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.get-involved-section .cards .card p{
+  font-size: var(--font-size-400);
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.get-involved-section .cards .card a {
+  padding: 0 0.25em;
+  font-size: var(--font-size-400);
+  text-decoration: none;
+  color: inherit;
+  color: transparent;
+  background: var(--horizontal-persian-rose-to-american-yellow);
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
+}
+
+.get-involved-section .cards .card a::after {
+  content: '';
+  background: var(--horizontal-persian-rose-to-american-yellow);
+  height: 0.0625em;
+  width: 100%;
+  bottom: -10%;
+  left: 0;
+  position: absolute;
+}
+
+.get-involved-section .cards .card:last-child::after {
+  width: 0px;
+}
+
+@media (min-width: 1250px) {
+  .get-involved-section .cards .card {
+    flex-basis: auto;
+    flex-shrink: 0;
+    margin: 0 1.5em;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .get-involved-section .cards .card .img-wrapper {
+    margin-bottom: 2em;
+  }
+
+  .get-involved-section .cards .card h3 {
+    margin-top: 0em;
+    /* margin-bottom: auto; */
+  }
+
+  .get-involved-section .cards .card p {
+    max-width: 8em;
+    margin: 1em 0;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .get-involved-section .cards .card::after {
+    width: 3px;
+    height: 8em;
+    left: auto;
+    right: -10%;
+    bottom: 0;
+    background: var(--persian-rose-to-american-yellow);
+  }
+
+}
+
+.get-involved-section .quotes-card {
+  width: clamp(19.375rem, -1.4623rem + 87.7358vw, 77.5rem);
+  margin-bottom: 3em;
+  background-color: hsl(var(--sky-blue-color-hsl), 40%);
+  padding: 2em 3.25em;
+  border-radius: 2em;
+  text-align: center;
+  font-weight: var(--font-weight-extrabold);
+  font-size: var(--font-size);
+  position: relative;
+}
+
+.get-involved-section .quotes-card .quotes-wrapper {
+  width: 2em;
+  position: absolute;
+}
+
+.get-involved-section .quotes-card .quotes-1 {
+  top: 1em;
+  left: 1.375em;
+}
+
+.get-involved-section .quotes-card .quotes-2 {
+  bottom: 1em;
+  right: 1.375em;
+}

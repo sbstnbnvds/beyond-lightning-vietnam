@@ -18,8 +18,8 @@ const LandingPage = () => {
     <SideEvents/>
     <Sponsors/>
     <MediaPartners/>
-    {/* <GetInvolved/>
-    <ContactUs/> */}
+    <GetInvolved/>
+    <ContactUs/>
 
 
   </>
