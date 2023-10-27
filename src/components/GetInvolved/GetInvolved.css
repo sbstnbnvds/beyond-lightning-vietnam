@@ -90,6 +90,9 @@
 }
 
 @media (min-width: 1250px) {
+  .get-involved-section .cards {
+    margin-bottom: 3em;
+  }
   .get-involved-section .cards .card {
     flex-basis: auto;
     flex-shrink: 0;

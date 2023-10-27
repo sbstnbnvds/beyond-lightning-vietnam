@@ -22,7 +22,7 @@ const Location = () => {
           <img src="https://picsum.photos/690/451" className="picture" alt="" />
           <div className="picture-frame"><img src={PictureFrame} alt="" className="picture-frame" /></div>
         </div>
-        <div className="sky-blue-background">sd</div>
+        <div className="sky-blue-background">Website Designed by Creative Network</div>
       </div>
     </section>
   )

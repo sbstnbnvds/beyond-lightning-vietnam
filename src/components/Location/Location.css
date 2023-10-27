@@ -16,6 +16,7 @@ section.location>div {
   margin: 3.125em 0;
   margin-left: 0.5625em;
   margin-right: 1em;
+  flex-basis: 100%;
 }
 
 .location h2 {
@@ -118,7 +119,7 @@ section.location>div {
 }
 
 
-@media (min-width: 838px) {
+@media (min-width: 887px) {
   .location {
     background: var(--russian-violet-to-neon-blue);
     padding: 2.0625em 0;
@@ -126,6 +127,7 @@ section.location>div {
 
   .location .top-div {
     flex-direction: column-reverse;
+    flex-basis: auto;
   }
 
   .location .top-div .main-subtitle {

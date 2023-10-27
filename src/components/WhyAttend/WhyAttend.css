@@ -11,15 +11,21 @@
     background: var(--horizontal-persian-rose-to-american-yellow);
     -webkit-background-clip: text;
     background-clip: text;
-    margin-top: 0.75em;
+    /* margin-top: 0.75em; */
+    text-align: center;
+    
+    /* flex-grow: 10; */
+    height: 2.25em;
 }
 
 .why-attend-section .flex {
     flex-wrap: wrap;
 }
-.why-attend-section .grid-item img{
+
+.why-attend-section .grid-item img {
     aspect-ratio: 1/1;
     width: min(2.1168rem + 5.9813vw, 7.5rem);
+    margin-bottom: 1em;
 }
 
 .why-attend-section .grid-item {
@@ -27,16 +33,25 @@
     margin-top: 2em;
     flex: 1 1 450px;
     padding: 0;
+    justify-content: space-between;
 }
 
 .why-attend-section p {
-    margin-top: 1em;
+    /* margin-top: 1em; */
+    font-weight: var(--font-weight-medium);
+    flex-grow: 1;
+    margin: 1em 0;
+}
+
+
+.why-attend-section h3 {
+    display: flex;
+    align-items: center;
 }
 
 @media (min-width: 1000px) {
     .why-attend-section .grid-item {
         padding: 0 1.25em;
-        justify-content: space-between;
     }
-    
+
 }

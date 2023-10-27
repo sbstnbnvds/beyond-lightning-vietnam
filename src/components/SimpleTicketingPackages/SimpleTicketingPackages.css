@@ -145,7 +145,7 @@
     border-radius: 100px;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 930px) {
 
     .main-ticketing-section,
     .simple-ticketing {
@@ -161,7 +161,7 @@
     }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 930px) {
 
     .main-ticketing-section {
         flex-grow: 1;
