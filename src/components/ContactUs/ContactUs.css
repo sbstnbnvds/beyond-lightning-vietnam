@@ -1,0 +1,46 @@
+.contact-us-section {
+  align-items: center;
+}
+
+.contact-us-section h2 {
+  margin: 0.75em 0px;
+}
+
+.contact-us-section .contact-us-form {
+  background-color: hsl(var(--sky-blue-color-hsl), 40%);
+  padding: 2em;
+  width:   clamp(19.375rem, -1.4623rem + 87.7358vw, 77.5rem);
+  color: var(--sky-blue-color-hsl) !important;
+  border-radius: 1.125em;
+  margin-bottom: 1.75em;
+}
+
+.contact-us-section .contact-us-form input {
+  border: none;
+  background-color: transparent;
+  font-weight: var(--font-weight-semibold);
+  color: var(--russian-violet-color);
+  margin: 1.5em 0px;
+  padding-bottom: 0.75em;
+  border-bottom: 2px solid var(--sky-blue-color);
+}
+
+
+.contact-us-form input[type="text"]::placeholder,
+form textarea::placeholder,
+form select::placeholder{
+  color: var(--sky-blue-color) !important;
+  opacity: 1 !important;
+}
+
+
+.contact-us-section .contact-us-form button {
+  background: var(--american-yellow-color);
+  border: none;
+  padding: 0.5em 0;
+  background: var(--horizontal-american-yellow-to-persian-rose);
+  color: var(--sky-blue-color);
+  text-transform: capitalize;
+  font-size: 1.75em;
+  font-weight: var(--font-weight-black);
+}
