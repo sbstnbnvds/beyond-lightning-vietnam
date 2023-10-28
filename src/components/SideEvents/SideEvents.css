@@ -4,6 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 3em 0 2em 0;
+  position: relative;
 }
 
 .side-events-section .title {
@@ -45,11 +46,20 @@
   font-weight: var(--font-weight-black);
 }
 
+.side-events-section .main-div-wrapper {
+  position: relative;
+}
+
 .side-events-section .main-div {
   align-items: stretch;
   justify-content: center;
 }
 
+.main-div.not-active {
+  position: absolute;
+  left: -100px;
+  display: none;
+}
 .side-events-section .main-div .img-container {
   overflow: hidden; 
 }
@@ -209,7 +219,7 @@
     margin-right: 0;
   }
 
-  .side-events-section .main-div {
+  .side-events-section .main-div-wrapper {
     margin-top: 1em;
     flex-basis: 100%;
   }
