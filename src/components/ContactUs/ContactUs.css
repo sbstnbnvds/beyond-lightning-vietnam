@@ -23,6 +23,7 @@
   margin: 1.5em 0px;
   padding-bottom: 0.75em;
   border-bottom: 2px solid var(--sky-blue-color);
+  outline: none;
 }
 
 

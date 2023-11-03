@@ -1,3 +1,5 @@
+import Navbar from "../components/Navbar/Navbar"
+
 import Main from "../components/Main/Main"
 import About from "../components/About/About"
 import WhyAttend from "../components/WhyAttend/WhyAttend"
@@ -8,9 +10,9 @@ import MediaPartners from "../components/MediaPartners/MediaPartners"
 import GetInvolved from "../components/GetInvolved/GetInvolved"
 import ContactUs from "../components/ContactUs/ContactUs"
 
-
 const LandingPage = () => {
   return (<>
+    <Navbar/>
     <Main/>
     <About/>
     <WhyAttend />
