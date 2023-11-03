@@ -1,16 +1,31 @@
+import { useState } from "react"
 import "./Navbar.css"
 import { Link } from "react-router-dom"
 
-const Navbar = () => {
+const Navbar = ({ page }) => {
+
+  const [ click, setClick ] = useState(false)
+  
+  const handleClick = () => {
+    setClick(!click);
+    console.log("event")
+  }
   return (
-    <div className="navbar">
-      <div className="menu-btn">
-        <div className='hamburger-menu' />
+    <>
+    <nav className={page === 'ticketing' ? 'navbar ticketing' : 'navbar'}>
+      <div className="hamburger-wrapper">
+        <button className={click ? "menu-btn open-menu": "menu-btn"} onClick={handleClick}>
+          <span className='hamburger-menu' />
+        </button>
       </div>
-      <Link to={"ticketing"}>
+      <Link to={"ticketing"} >
         <button className='buy-tickets'>Buy Tickets</button>
       </Link>
-    </div>
+    </nav>
+    <aside className={click ? 'active-sidebar' : ''}>
+      dsdfs
+    </aside>    
+    </>
   )
 }
 

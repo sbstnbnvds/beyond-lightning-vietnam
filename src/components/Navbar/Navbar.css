@@ -1,6 +1,5 @@
 .navbar {
-    position: fixed;
-    z-index: 1000;
+    position: absolute;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -8,46 +7,80 @@
     padding: 2em 5em;
 }
 
+.navbar .hamburger-wrapper {
+    height: 1px;
+    width: 1.75em;
+}
 
-.navbar>div.menu-btn {
-    position: relative;
+.navbar button.menu-btn {
+    position: fixed;
+    top: 2.625em;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 100%;
-    cursor: pointer;
-    /* transition: all .5s ease-in-out; */
-    /* border: 3px solid #fff; */
-}
-
-.navbar>div.menu-btn>.hamburger-menu {
     width: 1.75em;
-    height: 0.2em;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-    /* transition: all .5s ease-in-out; */
-    margin: 0.5em auto;
+    height: 1.3125em;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1000;   
 }
 
-.navbar>div.menu-btn>.hamburger-menu::before,
-.navbar>div.menu-btn>.hamburger-menu::after {
+.navbar button.menu-btn>.hamburger-menu {
+    
+    position: relative;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    margin: 0.5em auto;
+    --line-distance: 0.375em;
+}
+
+
+.navbar button.menu-btn>.hamburger-menu::before,
+.navbar button.menu-btn>.hamburger-menu::after {
     content: '';
     position: absolute;
-    width: 1.75em;
-    height: 0.2em;
+    left: 0;
+    right: 0;
+}
+
+.navbar button.menu-btn>.hamburger-menu,
+.navbar button.menu-btn>.hamburger-menu::before,
+.navbar button.menu-btn>.hamburger-menu::after {
+    width: 100%;
+    height: 0.1875em;
     background: #fff;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-    /* transition: all .5s ease-in-out; */
+    border: none;
+    transition: all 0.3s;
 }
 
-.navbar>div.menu-btn>.hamburger-menu::before {
-    transform: translateY(-0.5em);
+.navbar button.menu-btn>.hamburger-menu::before {
+    transform: translateY(calc(var(--line-distance)*-1));
 }
 
-.navbar>div.menu-btn>.hamburger-menu::after {
-    transform: translateY(0.5em);
+.navbar button.menu-btn>.hamburger-menu::after {
+    transform: translateY(var(--line-distance));
 }
+
+/* Open Menu */
+
+.navbar button.menu-btn.open-menu>.hamburger-menu {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar button.menu-btn.open-menu>.hamburger-menu::after {
+    transform: rotate(-45deg);
+}
+
+.navbar button.menu-btn.open-menu>.hamburger-menu::before {
+    transform: rotate(45deg);
+}
+
+
+/* Buy Tickets Button */
 
 .navbar>a>button.buy-tickets {
     display: flex;
@@ -61,8 +94,38 @@
     font-size: var(--font-size-400);
     font-weight: var(--font-weight-bold);
     border: none;
+    cursor: pointer;
 }
 
 .navbar a {
-    cursor: pointer;
+    cursor: pointer !important;
+}
+
+.navbar.ticketing>a>button.buy-tickets{
+    display: none;
+}
+
+.navbar.ticketing {
+    justify-content: end;
+}
+
+
+
+/* Sidebar */
+
+aside {
+    position: fixed;
+    inset: 0 30% 0 0;
+    background-color: rgba(255, 101, 47, .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+    
+}
+
+aside.active-sidebar {
+    transform: translateX(0);
 }
