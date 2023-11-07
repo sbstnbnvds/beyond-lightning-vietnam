@@ -15,7 +15,6 @@
 .navbar button.menu-btn {
     position: fixed;
     top: 2.625em;
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +51,7 @@
     height: 0.1875em;
     background: #fff;
     border: none;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar button.menu-btn>.hamburger-menu::before {
@@ -82,11 +81,13 @@
 
 /* Buy Tickets Button */
 
-.navbar>a>button.buy-tickets {
+.navbar>a.buy-tickets {
     display: flex;
     padding: 0.25em 0.75em;
     justify-content: center;
     align-items: center;
+    z-index: 40;
+    text-align: center;
 
     border-radius: 60px;
     background: var(--horizontal-persian-rose-to-american-yellow);
@@ -101,31 +102,10 @@
     cursor: pointer !important;
 }
 
-.navbar.ticketing>a>button.buy-tickets{
+.navbar.ticketing>a.buy-tickets{
     display: none;
 }
 
 .navbar.ticketing {
     justify-content: end;
-}
-
-
-
-/* Sidebar */
-
-aside {
-    position: fixed;
-    inset: 0 30% 0 0;
-    background-color: rgba(255, 101, 47, .2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 40;
-    transform: translateX(-100%);
-    transition: all 0.3s ease-out;
-    
-}
-
-aside.active-sidebar {
-    transform: translateX(0);
 }

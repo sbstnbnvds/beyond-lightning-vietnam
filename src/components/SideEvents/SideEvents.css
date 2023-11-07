@@ -224,3 +224,19 @@
     flex-basis: 100%;
   }
 }
+
+
+
+
+/* Change UL text color with each subsection (Hackathon, Workshops...) */
+/* 
+.side-events-section,
+.side-events-section *
+{
+    --sky-blue-color: #fff;
+}
+
+.side-events-section ul {
+
+    color: var(--sky-blue-color)
+} */

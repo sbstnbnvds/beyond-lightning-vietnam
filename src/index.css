@@ -37,12 +37,15 @@ a {
 :root {
   /* color palette */
   --sky-blue-color-hsl: 188, 100%, 67%;
+  --neon-blue-color-hsl: 246, 81%, 35%;
+  --russian-violet-color-hsl: 256, 62%, 17%;
+  
   
   --sky-blue-color: hsl(var(--sky-blue-color-hsl));
   --vivid-sky-blue-color: #00ccfd;
   --persian-rose-color: #ff34b3;
-  --neon-blue-color: #2011a2;
-  --russian-violet-color: #201148;
+  --neon-blue-color: hsl(var(--neon-blue-color-hsl));
+  --russian-violet-color: hsl(var(--russian-violet-color-hsl));
   --american-yellow-color: #f2a900;
 
   /* color gradients  */
